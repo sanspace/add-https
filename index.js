@@ -14,8 +14,12 @@ var button = buttons.ActionButton({
 
 function handleClick(state) {
   var tabs = require("sdk/tabs");
-  // Change active tab url from http to https
-  tabs.activeTab.url = tabs.activeTab.url.replace(/http:/, 'https:');
-  // If it's already https switch to http
-  tabs.activeTab.url = tabs.activeTab.url.replace(/https:/, 'http:');
+  if (tabs.activeTab.url.startswith('http:')) {
+    // Change active tab url from http to https
+    tabs.activeTab.url = tabs.activeTab.url.replace(/http:/, 'https:');
+  }
+  if (tabs.activeTab.url.startswith('https:')) {
+    // If it's already https switch to http
+    tabs.activeTab.url = tabs.activeTab.url.replace(/https:/, 'http:');
+  }
 }
