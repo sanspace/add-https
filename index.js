@@ -16,4 +16,6 @@ function handleClick(state) {
   var tabs = require("sdk/tabs");
   // Change active tab url from http to https
   tabs.activeTab.url = tabs.activeTab.url.replace(/http:/, 'https:');
+  // If it's already https switch to http
+  tabs.activeTab.url = tabs.activeTab.url.replace(/https:/, 'http:');
 }
