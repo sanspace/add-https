@@ -2,7 +2,7 @@ var buttons = require('sdk/ui/button/action');
 var tabs = require("sdk/tabs");
 
 var button = buttons.ActionButton({
-  id: "secureit-button",
+  id: "addhttps-button",
   label: "Add HTTPS",
   icon: {
     "16": "./icon-16.png",
