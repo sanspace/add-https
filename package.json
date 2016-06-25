@@ -1,12 +1,12 @@
 {
   "title": "Add HTTPS",
   "name": "add-https",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "It toggles http(s) of the current URL",
   "main": "index.js",
   "author": "Santhosh Kumar Srinivasan",
   "engines": {
-    "firefox": ">=38.0a1"
+    "firefox": "*"
   },
   "license": "MIT"
 }
