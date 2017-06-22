@@ -12,7 +12,7 @@
   },
 
   "page_action": {
-    "default_icon": "icons/padlock_green.svg",
+    "default_icon": "icons/padlock_red.svg",
     "browser_style": true
   },
   
